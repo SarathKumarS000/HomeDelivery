@@ -402,20 +402,17 @@ header .icons #menu-bars {
 
 /**********************************COOKIES sECTION STARTS HERE********************** fghj  */
 
-/* .section-meals {
+.section-meals {
     padding: 9.6rem 0;
     
-  } */
+  }
   .container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    color: var(--maincolor);
-}
-.item p {
-    color: var(--maincolor);
-}
-.item {
+  }
+
+  .item {
     
     width: 20px;
     /*flex-wrap: wrap;*/
@@ -423,93 +420,97 @@ header .icons #menu-bars {
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.4s;
-    flex: 1 1 25rem;
-
-}
-
-.item:hover {
+    flex: 1 1 30rem;
+    
+  }
+  
+  .item:hover {
     transform: translateY(-1.2rem);
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
-}
-
-.item-content {
+  }
+  
+  .item-content {
     padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-}
-
-.meal-tags {
+  }
+  
+  .meal-tags {
     margin-bottom: 1.2rem;
     display: flex;
     gap: 0.4rem;
-}
-
-
-
-.meal-title {
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+  }
+  
+ 
+  .meal-title {
     font-size: 2.4rem;
     color: #333;
     font-weight: 600;
     margin-bottom: 3.2rem;
-}
-
-.meal-attributes {
+  }
+  
+  .meal-attributes {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.meal-attribute {
+  }
+  
+  .meal-attribute {
     font-size: 1.8rem;
     display: flex;
     align-items: center;
     gap: 1.6rem;
-}
-
-
-
-.item img {
+  }
+  
+ 
+  
+  .item img {
     height: 250px;
     width: 350px;
-}
-
-.all-recipes {
+  }
+  
+  .all-recipes {
     text-align: center;
     font-size: 1.8rem;
 
-}
+  }
+ 
+    .button {
+        display: inline-block;
+        padding: 15px 35px;
+        font-size: 12.5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .button:hover {background-color: #3e8e41}
+      
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
 
+      .continfo{
 
-
-.meal-attribute .button {
-    display: inline-block;
-    padding: 15px 35px;
-    font-size: 12.5px;
-    width: 55%;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: var(--maincolor);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-.meal-attribute .button:hover {
-    background-color: var(--light-color)
-}
-
-.meal-attribute .button:active {
-    background-color: #666766;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.continfo{
-
-    font-family: cursive;
-}
+        font-family:cursive;
+      }
 /* Product section ends  */
 
 /* Review section */
