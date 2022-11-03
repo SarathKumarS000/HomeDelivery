@@ -622,13 +622,15 @@
                     <h1>Send a Message</h1>
                     <form action="" method="" class="form">
                         <div class="input-group">
-                            <input type="text" name="first_name" id="first-name" placeholder="First name">
+                            <input type="text" onkeypress=" return isinputnumber(event);" name="first_name" id="first-name" placeholder="First name">
                             <label for="first-name">First name</label>
+                            <span id="lblError" style="color: red"></span>
                         </div>
 
                         <div class="input-group">
-                            <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                            <input type="text" onkeypress=" return issinputnumber(event);" name="last_name" id="last-name" placeholder="Last Name">
                             <label for="last-name">Last name</label>
+                            <span id="lblErrorr" style="color: red"></span>
                         </div>
 
                         <div class="input-group">

@@ -91,3 +91,47 @@ function togglePopup() {
   // document.getElementById("demo").innerHTML = "Hello World";
   alert('Please Login to order');
 }
+
+
+
+
+
+// subin
+
+
+function isinputnumber(e){
+var keyCode = e.keyCode || e.which;
+
+      var lblError = document.getElementById("lblError");
+      lblError.innerHTML = "";
+      var regex = /^[A-Za-z]+$/;
+      var isValid = regex.test(String.fromCharCode(keyCode));
+      if (!isValid) {
+          lblError.innerHTML = "Only Alphabets allowed.";
+      }
+
+      return isValid;
+
+}
+
+
+function issinputnumber(e){
+var keyCode = e.keyCode || e.which;
+
+      var lblErrorr = document.getElementById("lblErrorr");
+      lblErrorr.innerHTML = "";
+
+      //Regex for Valid Characters i.e. Alphabets.
+      var regex = /^[A-Za-z]+$/;
+
+      //Validate TextBox value against the Regex.
+      var isValid = regex.test(String.fromCharCode(keyCode));
+      if (!isValid) {
+          lblErrorr.innerHTML = "Only Alphabets allowed.";
+      }
+
+      return isValid;
+
+
+
+}
