@@ -48,14 +48,14 @@ header {
 }
 
 .nav-left {
-    /* justify-content: space-around; */
+    justify-content: space-around;
     width: 50%;
     height: 50px;
     /* padding: 20px 30px; */
     position: fixed;
     font-size: 30px;
     background-color: var(--maincolor);
-    text-align: left;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* margin-right:-6px; */
     font-size: 20px;
@@ -64,6 +64,8 @@ header {
     transition: none;
 }
 .nav-right {
+    
+    justify-content: space-around;
     width: 50%;
     height: 50px;
     margin-left: 50%;
@@ -72,7 +74,7 @@ header {
     position: fixed;
     font-size: 30px;
     background-color: var(--maincolor);
-    text-align: right;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* margin-right:-6px; */
     font-size: 20px;
@@ -123,12 +125,12 @@ header .logo {
     /* background-color: rgb(52, 52, 56); */
     /* color: aquamarine; */
     /* border-radius: 50%; */
-    height: 5px;
-    width: 5px;
+    /* height: 5px;
+    width: 5px; */
     /* top: 0;
-    margin: 95px;
-    margin-left: 45%;
-    margin-top: 5px; */
+    margin: 95px;*/
+    margin-left: 48%;
+    margin-top: 50px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
 }
 section {
