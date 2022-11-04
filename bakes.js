@@ -72,15 +72,15 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) { slideIndex = 1 }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
@@ -90,4 +90,45 @@ function showSlides() {
 function togglePopup() {
   // document.getElementById("demo").innerHTML = "Hello World";
   alert('Please Login to order');
+}
+
+
+// subin
+
+
+function isinputnumber(e) {
+  var keyCode = e.keyCode || e.which;
+
+  var lblError = document.getElementById("lblError");
+  lblError.innerHTML = "";
+  var regex = /^[A-Za-z]+$/;
+  var isValid = regex.test(String.fromCharCode(keyCode));
+  if (!isValid) {
+    lblError.innerHTML = "Only Alphabets allowed.";
+  }
+
+  return isValid;
+
+}
+
+
+function issinputnumber(e) {
+  var keyCode = e.keyCode || e.which;
+
+  var lblErrorr = document.getElementById("lblErrorr");
+  lblErrorr.innerHTML = "";
+
+  //Regex for Valid Characters i.e. Alphabets.
+  var regex = /^[A-Za-z]+$/;
+
+  //Validate TextBox value against the Regex.
+  var isValid = regex.test(String.fromCharCode(keyCode));
+  if (!isValid) {
+    lblErrorr.innerHTML = "Only Alphabets allowed.";
+  }
+
+  return isValid;
+
+
+
 }
