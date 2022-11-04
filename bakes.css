@@ -806,6 +806,47 @@ button:hover {
     cursor: pointer;
 }
 
+
+
+.popup{
+    /*     display: flex; */
+    /*     justify-content: center; */
+        width: 300px;
+        height:100px;
+        background: rgb(115, 97, 97);
+        border-radius: 20px;
+        position: absolute;
+        /* top: 1000px; */
+        left: 545px;
+        /* transform: transla   te(-50%,-50%) scale(0); */
+        text-align: center;
+        /* padding: 0 30px 30px; */
+        opacity: 0;
+        visibility: hidden;
+    
+    
+    
+    }
+
+
+    .popup h2{
+        padding-top:20px;
+    }
+    .popup button{
+        width:70px
+    }
+    .popup.active{
+        opacity: 1;
+        visibility: visible;
+        /* transform: translate(-50%,-50%) scale(1); */
+    }
+    
+    
+
+
+
+
+
 /* contact section ends  */
 
 /* live section  */
