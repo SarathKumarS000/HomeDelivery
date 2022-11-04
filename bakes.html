@@ -72,15 +72,15 @@
                     <img src="img/i.jpg" style="width:250%">
                     <!-- <div class="text">Caption Three</div> -->
                 </div>
-
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
             <br>
 
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
+            
         </section>
         <section class="about" id="about">
             <div class="wrapper-about">
@@ -677,7 +677,7 @@
                         <p><br><b>You get to bake along with me</b> </p>
                     </div>
                     <div class="inputBox">
-                        <input type="text" placeholder="Your Name" required="required">
+                        <input type="text" onkeypress=" return isinputnumber(event);" placeholder="Your Name" required="required">
                         <input type="email" placeholder="Email ID" required="required">
                     </div>
 
