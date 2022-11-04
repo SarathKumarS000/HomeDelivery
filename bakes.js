@@ -132,3 +132,17 @@ function issinputnumber(e) {
 
 
 }
+
+
+
+let button=document.querySelector(".button-div");
+var popup=document.querySelector('.popup');
+button.addEventListener('click',()=>
+{
+    popup.classList.add("active");
+
+})
+popup.addEventListener('click',()=>
+{
+    popup.classList.remove("active");
+})
