@@ -85,6 +85,77 @@ function showSlides() {
 
 
 
+
+//rithika
+
+const cartButton=document.querySelector('.cartPress');
+const addCartButtons=document.querySelectorAll('#cookiebutton');
+const setCartCount=document.getElementById('setCount');
+const displayCartPopup=document.querySelector('.cartPopup')
+const displayCartOverlay=document.querySelector('.cartOverlay');
+const clearCartFunction=document.querySelector('.clearCart');
+const closePopupCart=document.querySelector('.closeCartPopup');
+const setCartItems=document.getElementsByClassName('cartItems');
+let cartCount=0;
+let cartItem=[];
+
+addCartButtons.forEach((addCartButtons)=>{
+  addCartButtons.addEventListener('click',()=>{
+    
+    cartItem.push(addCartButtons.value);
+    
+    cartCount+=1;
+     setCartCount.innerHTML=cartCount;
+    
+
+  })
+
+})
+
+cartButton.addEventListener('click',()=>{
+
+  
+  displayCartPopup.classList.add('active');
+  displayCartOverlay.classList.add('active');
+  
+  
+  if(cartItem!=null){
+    
+      document.querySelector('.cartItems').innerHTML=cartItem;
+    
+    
+  }
+  else{
+    document.querySelector('.cartItems').innerHTML="Cart is empty";
+  }
+    
+  
+
+     
+    
+
+  
+})
+
+closePopupCart.addEventListener('click',()=>{
+  displayCartPopup.classList.remove('active');
+  displayCartOverlay.classList.remove('active');
+
+})
+
+
+
+clearCartFunction.addEventListener('click',()=>{
+   if(cartCount!=0){
+  setCartCount.innerHTML=0;
+  document.querySelector('.cartItems').innerHTML="Cart is empty";
+  cartItem=null;
+  }
+
+=======
+
+
+
 // Athisree
 
 function togglePopup() {
@@ -145,4 +216,5 @@ button.addEventListener('click',()=>
 popup.addEventListener('click',()=>
 {
     popup.classList.remove("active");
+
 })
