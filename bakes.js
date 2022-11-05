@@ -12,20 +12,6 @@ fields.forEach(field => {
     submitButton.disabled = !fields.every(field => field.value)
   })
 })
-// const inputs = document.getElementsByClassName('required');
-// const live = document.querySelector('input [type="submit"]');
-// let cansubmit = true;
-
-// live.addEventListener( () => {
-//   for (var index = 0; index < inputs.length; index++) {
-//     let changedInput = inputs[index];
-//     if (changedInput.value.trim() === "" || changedInput.value === null) {
-//       cansubmit = false;
-//       break;
-//     }
-//   }
-//   // live.disable = !cansubmit
-// })
 
 openButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -131,9 +117,6 @@ cartButton.addEventListener('click',()=>{
     
   
 
-     
-    
-
   
 })
 
@@ -158,7 +141,6 @@ clearCartFunction.addEventListener('click',()=>{
 // Athisree
 
 function togglePopup() {
-  // document.getElementById("demo").innerHTML = "Hello World";
   alert('Please Login to order');
 }
 

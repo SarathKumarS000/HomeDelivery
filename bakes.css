@@ -796,8 +796,6 @@ button:hover {
 
 
 .popup{
-    /*     display: flex; */
-    /*     justify-content: center; */
         width: 300px;
         height:100px;
         background: rgb(115, 97, 97);
@@ -886,14 +884,6 @@ button:hover {
     width: 49%;
 }
 
-/* .livesection .row form .btn {
-    background: none;
-}
-
-.livesection .row form .btn:hover {
-    background: #FA2424;
-} */
-
 
 .livesection .btn {
     display: inline-block;
@@ -950,55 +940,6 @@ button:hover {
     color: #fff;
 }
 
-/* pop section  */
-
-/* .livesection .popup {
-    width : 400px;
-    background: #fff;
-    position: absolute;
-    border-radius: 6px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.livesection .open-popup {
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.livesection .popup img {
-    width: 100px;
-    margin: -50px;
-    border: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.livesection .popup h2  {
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.livesection .popup button {
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #6fd649;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-} */
 
 .learn {
     position: fixed;
@@ -1024,52 +965,23 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid black; */
 }
 
-/* .learn-header .title {
-    font-size: 2.25rem;
-    font-weight: bold;
-} */
 
 .learn-header .title img {
-    /* background: #fff;
-    border-radius:50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    transition: transform 0.4s, top 0.4s;
-    width: 100px;
-    margin: -50px;
-    border: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     position: absolute;
     background-color: rgb(52, 52, 56);
     color: aquamarine;
     border-radius: 50%;
     height: 80px;
     width: 80px;
-    /* top: 0; */
     margin: 95px;
     margin-top: -55px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* transition: 0.4s ease; */
 
 }
 
 .learn-body .close-button {
-    /* cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 2.25rem;
-    font-weight: bold; */
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
@@ -1106,9 +1018,6 @@ button:hover {
     pointer-events: all;
 }
 
-/* live section ends  */
-
-/* footer */
 
 footer {
     display: flex;
@@ -1151,7 +1060,6 @@ footer .logo {
 }
 
 .cartPress{
-    /* background-color: var(--maincolor); */
     background: none;
     border: none;
     padding: 0%;
