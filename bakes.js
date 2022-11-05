@@ -152,8 +152,7 @@ clearCartFunction.addEventListener('click',()=>{
   cartItem=null;
   }
 
-=======
-
+})
 
 
 // Athisree
