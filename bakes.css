@@ -101,11 +101,11 @@ nav a {
     padding: 0px 24px 0px 24px;
 }
 
-/* #logos {
+ #logo {
     padding-top: 25px;
     height: 100px;
     width: 100px;
-} */
+} 
 
 nav a:active,
 nav a:hover {
@@ -129,8 +129,8 @@ header .logo {
     width: 5px; */
     /* top: 0;
     margin: 95px;*/
-    margin-left: 48%;
-    margin-top: 50px;
+    margin-left: 45%;
+    margin-top: 70px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
 }
 section {
