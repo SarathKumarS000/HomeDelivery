@@ -64,25 +64,23 @@ function close(modal) {
 // Arjun
 
 
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides();
 
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  
+  slides[slideIndex - 1].style.display = "block";
+  
+  setTimeout(showSlides, 2000);
 }
+
 
 
 
@@ -153,5 +151,70 @@ clearCartFunction.addEventListener('click',()=>{
   document.querySelector('.cartItems').innerHTML="Cart is empty";
   cartItem=null;
   }
+
+=======
+
+
+
+// Athisree
+
+function togglePopup() {
+  // document.getElementById("demo").innerHTML = "Hello World";
+  alert('Please Login to order');
+}
+
+
+// subin
+
+
+function isinputnumber(e) {
+  var keyCode = e.keyCode || e.which;
+
+  var lblError = document.getElementById("lblError");
+  lblError.innerHTML = "";
+  var regex = /^[A-Za-z]+$/;
+  var isValid = regex.test(String.fromCharCode(keyCode));
+  if (!isValid) {
+    lblError.innerHTML = "Only Alphabets allowed.";
+  }
+
+  return isValid;
+
+}
+
+
+function issinputnumber(e) {
+  var keyCode = e.keyCode || e.which;
+
+  var lblErrorr = document.getElementById("lblErrorr");
+  lblErrorr.innerHTML = "";
+
+  //Regex for Valid Characters i.e. Alphabets.
+  var regex = /^[A-Za-z]+$/;
+
+  //Validate TextBox value against the Regex.
+  var isValid = regex.test(String.fromCharCode(keyCode));
+  if (!isValid) {
+    lblErrorr.innerHTML = "Only Alphabets allowed.";
+  }
+
+  return isValid;
+
+
+
+}
+
+
+
+let button=document.querySelector(".button-div");
+var popup=document.querySelector('.popup');
+button.addEventListener('click',()=>
+{
+    popup.classList.add("active");
+
+})
+popup.addEventListener('click',()=>
+{
+    popup.classList.remove("active");
 
 })
