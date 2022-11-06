@@ -50,7 +50,7 @@ function close(modal) {
 // Arjun
 
 
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
