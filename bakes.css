@@ -50,7 +50,7 @@ header {
 .nav-left {
     justify-content: space-around;
     width: 50%;
-    height: 50px;
+    height: 11.5%;
     /* padding: 20px 30px; */
     position: fixed;
     font-size: 30px;
@@ -67,7 +67,7 @@ header {
     
     justify-content: space-around;
     width: 50%;
-    height: 50px;
+    height: 11.5%;
     margin-left: 50%;
     /* margin-top: -200px; */
     /* padding: 20px 30px; */
@@ -90,7 +90,7 @@ header {
 
 nav a:link {
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 25px;
     display: inline-block;
     /* color: #857d7d; */
     text-decoration: none;
@@ -1052,7 +1052,7 @@ footer .logo {
 #setCount{
     color: white;
     position: absolute;
-    top: 55%;
+    top: 30%;
     left: 95%;
     transform: translate(-50%,-50%);
     font-size: 15px;
@@ -1066,7 +1066,7 @@ footer .logo {
     padding-left: 19%;
     outline: none;
     cursor: pointer;
-    margin-left: 70%;
+    /* margin-left: 70%; */
 
 }
 .cartPress:focus{

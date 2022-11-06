@@ -107,7 +107,7 @@ cartButton.addEventListener('click',()=>{
   
   if(cartItem!=null){
     
-      document.querySelector('.cartItems').innerHTML=cartItem;
+      document.querySelector('.cartItems').innerHTML=cartItem.join("<br>");
     
     
   }
