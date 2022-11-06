@@ -61,9 +61,9 @@ function showSlides() {
   }
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 }
-  
+
   slides[slideIndex - 1].style.display = "block";
-  
+
   setTimeout(showSlides, 2000);
 }
 
@@ -74,67 +74,57 @@ function showSlides() {
 
 //rithika
 
-const cartButton=document.querySelector('.cartPress');
-const addCartButtons=document.querySelectorAll('#cookiebutton');
-const setCartCount=document.getElementById('setCount');
-const displayCartPopup=document.querySelector('.cartPopup')
-const displayCartOverlay=document.querySelector('.cartOverlay');
-const clearCartFunction=document.querySelector('.clearCart');
-const closePopupCart=document.querySelector('.closeCartPopup');
-const setCartItems=document.getElementsByClassName('cartItems');
-let cartCount=0;
-let cartItem=[];
+const cartButton = document.querySelector('.cartPress');
+const addCartButtons = document.querySelectorAll('#cookiebutton');
+const setCartCount = document.getElementById('setCount');
+const displayCartPopup = document.querySelector('.cartPopup')
+const displayCartOverlay = document.querySelector('.cartOverlay');
+const clearCartFunction = document.querySelector('.clearCart');
+const closePopupCart = document.querySelector('.closeCartPopup');
+const setCartItems = document.getElementsByClassName('cartItems');
+let cartCount = 0;
+let cartItem = [];
 
-addCartButtons.forEach((addCartButtons)=>{
-  addCartButtons.addEventListener('click',()=>{
-    
+addCartButtons.forEach((addCartButtons) => {
+  addCartButtons.addEventListener('click', () => {
     cartItem.push(addCartButtons.value);
-    
-    cartCount+=1;
-     setCartCount.innerHTML=cartCount;
-    
-
+    cartCount += 1;
+    setCartCount.innerHTML = cartCount;
   })
-
 })
 
-cartButton.addEventListener('click',()=>{
+cartButton.addEventListener('click', () => {
 
-  
   displayCartPopup.classList.add('active');
   displayCartOverlay.classList.add('active');
-  
-  
-  if(cartItem!=null){
-    
-      document.querySelector('.cartItems').innerHTML=cartItem.join("<br>");
-    
-    
-  }
-  else{
-    document.querySelector('.cartItems').innerHTML="Cart is empty";
-  }
-    
-  
 
-  
+  if (cartItem != null) {
+    document.querySelector('.cartItems').innerHTML = cartItem.join("<br>");
+  }
+  else {
+    document.querySelector('.cartItems').innerHTML = "Cart is empty";
+  }
 })
 
-closePopupCart.addEventListener('click',()=>{
+closePopupCart.addEventListener('click', () => {
   displayCartPopup.classList.remove('active');
   displayCartOverlay.classList.remove('active');
+})
 
+displayCartOverlay.addEventListener('click', () => {
+  displayCartPopup.classList.remove('active');
+  displayCartOverlay.classList.remove('active');
 })
 
 
 
-clearCartFunction.addEventListener('click',()=>{
-   if(cartCount!=0){
-  setCartCount.innerHTML=0;
-  document.querySelector('.cartItems').innerHTML="Cart is empty";
-  cartItem=null;
+clearCartFunction.addEventListener('click', () => {
+  if (cartCount != 0) {
+    setCartCount.innerHTML = 0;
+    document.querySelector('.cartItems').innerHTML = "Cart is empty";
+    cartItem = [];
+    cartCount = 0;
   }
-
 })
 
 
@@ -150,7 +140,6 @@ function togglePopup() {
 
 function isinputnumber(e) {
   var keyCode = e.keyCode || e.which;
-
   var lblError = document.getElementById("lblError");
   lblError.innerHTML = "";
   var regex = /^[A-Za-z]+$/;
@@ -158,15 +147,12 @@ function isinputnumber(e) {
   if (!isValid) {
     lblError.innerHTML = "Only Alphabets allowed.";
   }
-
   return isValid;
-
 }
 
 
 function issinputnumber(e) {
   var keyCode = e.keyCode || e.which;
-
   var lblErrorr = document.getElementById("lblErrorr");
   lblErrorr.innerHTML = "";
 
@@ -178,24 +164,16 @@ function issinputnumber(e) {
   if (!isValid) {
     lblErrorr.innerHTML = "Only Alphabets allowed.";
   }
-
   return isValid;
-
-
-
 }
 
 
 
-let button=document.querySelector(".button-div");
-var popup=document.querySelector('.popup');
-button.addEventListener('click',()=>
-{
-    popup.classList.add("active");
-
+let button = document.querySelector(".button-div");
+var popup = document.querySelector('.popup');
+button.addEventListener('click', () => {
+  popup.classList.add("active");
 })
-popup.addEventListener('click',()=>
-{
-    popup.classList.remove("active");
-
+popup.addEventListener('click', () => {
+  popup.classList.remove("active");
 })
